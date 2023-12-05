@@ -1,0 +1,773 @@
+@font-face {
+  font-family: Meddon;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/meddon/v24/kmK8ZqA2EgDNeHTpgx1A.woff2) ;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Just Another Hand;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/justanotherhand/v19/845CNN4-AJyIGvIou-6yJKyptyOpOfr4DGg.woff2) ;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+}
+
+*  {
+
+/* /// FONT /// */
+  --fontClassic: Roboto;
+  --fontQuote: Just Another Hand;
+
+/* /// COLOR /// */
+  --colorPaleBlue: rgba(157, 175, 175);
+  --colorGreen: rgba(0, 110, 81, 1);
+  --colorGreenHover: rgba(0, 110, 81, 0.7);
+  --colorCream: rgba(175, 148, 131, 0.9);
+  --colorCreamFull: rgba(175, 148, 131, 1);
+  --colorCreamBox: rgba(190, 172, 167, 1);
+  --colorYellow: rgba(216,174,71);
+  --colorRed: rgba(173,93,93);
+  --colorDarkRed: rgba(85, 51, 48);
+  --colorRedAloud: rgba(173,93,93,0.5);
+  --colorWhite: rgba(255,255,255,1);
+  --colorDullWhite: rgba(235,235,235,1);
+  --colorGreenLink: rgba(207, 238, 30, 1);
+}
+
+/* ////////////////////////////////////////////////// /
+/////                   Homepage                  /////
+/ ////////////////////////////////////////////////// */
+
+/* ////////// WORLD HEADING ////////// */
+
+/* /// Tilte /// */
+.user-css .world-title {
+    font-family: NodestoCaps, sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 5px #000000, -2px 2px 5px #000000, 2px -2px 5px #000000, -2px -2px 5px #000000;
+  background-image: none;
+}
+
+.world-title:after {
+    content: url(www.google.com);
+    height: 22px;
+    width: 60%;
+    background-image: url(https://www.worldanvil.com/uploads/images/b5ba355864016e3cb3b6f0fd8ca28673.png);
+    position: relative;
+    top: 0;
+    background-size: cover;
+    display: block;
+    left: 20%
+}
+
+/* /// Subtitle /// */
+.user-css h1 .world-subtitle small {
+    font-family: Lora, sans-serif;
+    transform: scale(1.9, 2.3) !important;
+    font-size: 30px;
+    color: white;
+    bottom: 30px;
+    right: 55px;
+    width: 700px;
+    text-shadow: 1px 1px 2px #000000, -1px 1px 2px #000000, 1px -1px 2px #000000, -1px -1px 2px #000000
+}
+
+/* /// Current Date /// */
+.user-css h3.world-currentDate {
+  border-bottom: none;
+}
+
+/* /// BBCode [h1] /// */
+.user-css.page-world-homepage h2, .user-css.page-category h2 {
+  color: var(--colorCreamFull);
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-image: url(https://www.worldanvil.com/uploads/images/848f78058c1636b322394e9322b3248a.png);
+  background-position: -7px  7px;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.user-css.page-world-homepage div.article-panel, .user-css.page-category div.article-panel {
+  margin-top: 20px;
+}
+
+.user-css.page-world-homepage .article-panel::before, .user-css.page-category .article-panel::before {
+  top: -9px;
+  height: 9px;
+}
+
+/* ////////// CUSTOM CONTENT 4 ////////// */
+
+/* /// Center Align Text /// */
+.user-css .user-custom-content-4 {
+  text-align: center;
+}
+
+/* ////////// WORLD CONTENT ////////// */
+
+/* /// World Codex /// */
+.user-css .world-meta-categories-link {
+  display: none;
+}
+
+/* ////////////////////////////////////////////////// /
+/////               Article & BBCode              /////
+/ ////////////////////////////////////////////////// */
+
+.user-css h1, .user-css h3, .user-css h4, .user-css h5 {
+  font-family: var(--fontClassic);
+  color: var(--colorDarkRed);
+}
+
+/* ////////// HEADING ////////// */
+
+/* /// Article Title /// */
+.user-css h1 {
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+text-align: center;
+  text-shadow: 0 0 4px #c9c7c8;
+
+  background-image: url(https://www.worldanvil.com/uploads/images/0cac3d3fb78043b5d5116fc3f1ff5b16.png);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px; /* Ajoutez un espace autour du texte pour mieux voir l'image */
+}
+
+ /* /// BBCode [h1] /// */
+.user-css h2 {
+  color: var(--colorCreamFull);
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  background-image: url(https://www.worldanvil.com/uploads/images/848f78058c1636b322394e9322b3248a.png);
+  background-position: -20px  -5px;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px; /* Ajoutez un espace autour du texte pour mieux voir l'image */
+}
+
+ /* /// BBCode [h2] /// */
+.user-css h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-bottom: 2px solid var(--colorDarkRed);
+}
+
+ /* /// BBCode [h3] /// */
+.user-css h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ /* /// BBCode [h4] /// */
+.user-css h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ////////// GENERAL TEXT ////////// */
+
+/* /// Body Text /// */
+.user-css, .user-css p, .user-css-extended, .user-css-extended p {
+  font-family: var(--fontClassic);
+  font-size: 16px;
+  background-color: var(--colorCream)
+}
+
+/* ////////// BBCODE TEXT EFFECTS ////////// */
+
+/* /// Link /// */
+.user-css a, .user-css a:focus {
+  color: var(--colorDarkRed);
+  font-style: italic;
+  text-decoration: none;
+}
+
+.user-css a:hover {
+  color: var(--colorYellow);
+  text-decoration: underline;
+}
+
+/* ////////// LAYOUT BBCODE ////////// */
+
+/* /// QUOTE /// */
+.user-css blockquote {
+  color: var(--colorDarkRed);
+  font-family: var(--fontQuote);
+  border: none;
+  font-size: 21px;
+  font-style: italic;
+  text-align: justify;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-image: url(https://www.worldanvil.com/uploads/images/9a4f6b49fdfb732435010ed510fed9bc.png);
+  background-position: -0.6% 1px;
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.user-css blockquote .author {
+  color: var(--colorDarkRed);
+  font-size: 16px;
+  font-style: normal;
+  text-align: right;
+}
+
+/* /// Horizontal Divider /// */
+.user-css hr {
+    border-color: var(--colorDarkRed);
+}
+
+/* /// Aloud /// */
+.user-css .aloud,
+.user-css-extended .aloud {
+  position: relative;
+  background-color: var(--colorCreamBox);
+  border-style: none;
+  box-shadow: 4px 4px 4px #333333;
+  border-radius: 0px;
+  padding: 10px;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.user-css .aloud::before,
+.user-css-extended .aloud::before {
+  content: url(attr);
+  position: absolute;
+  top: -17px;
+  left: 0;
+  right: 0;
+  height: 19px;
+  background: url(https://www.worldanvil.com/uploads/images/04ac6555596948120b4676e526e76822.png) top/cover no-repeat;
+}
+
+.user-css .aloud:hover,
+.user-css-extended .aloud:hover {
+  transform: scale(1.01);
+  transition: all 0.3s;
+}
+
+/* /// Spoilers /// */
+.user-css a.btn.btn-sm.btn-primary.spoiler-button[aria-expanded=true] { 
+  border-bottom: 0px solid;
+  transition: 0s;
+}
+
+.user-css a.btn.btn-sm.btn-primary.spoiler-button{   /*the button when the spoiler is toggled open*/
+  background: var(--colorCreamBox);
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  color: #333333!important;
+  transition: 1s; 
+}
+
+.user-css a.btn.btn-sm.btn-primary.spoiler-button.collapsed{   /*the button when the spoiler is toggled closed*/
+   background: var(--colorCreamBox);
+  border: none;
+  border-radius: 0px;
+  box-shadow: 4px 4px 4px #333333;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  color: #333333!important;
+  transition: 2s; 
+}
+
+.user-css div.well.spoiler-content{   /*the content of the spoiler*/
+   background: var(--colorCreamBox);
+  border: none;
+  border-radius: 0px;
+  box-shadow: 4px 4px 4px #333333;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  color: #333333!important;
+  transition: 2s; 
+}
+
+/* ////////// BBCODE TABLES ////////// */
+
+/* /// Table Cell / Table Header Cell /// */
+.user-css .table td, .user.css .table th {
+  border-top: none;
+}
+
+/* /// Odd Rows /// */
+.user-css .table-striped th, .user-css .table-striped tr:nth-child(odd) {
+  background: var(--colorPaleBlue);
+}
+
+/* ////////// ARTICLE BACKGROUND ////////// */
+
+/* /// Page Background /// */
+.user-css.page,
+.user-css-extended .page {
+    /*this affects the large page container*/
+  background-color: var(--colorCream);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.user-css .breadcrumb {
+  background: var(--colorCreamBox);
+  box-shadow: 4px 4px 4px #333333;
+  border-radius: 0;
+}
+
+/* ////////// ARTICLE SIDEBAR ////////// */
+
+/* /// SIdebar Panel /// */
+.user-css .article-content-right .panel {
+  position: relative;
+  background: var(--colorCreamBox);
+  border-style: none;
+  box-shadow: 4px 4px 4px #333333;
+  border-radius: 0px;
+  transition: all 0.3s;
+}
+
+.user-css .article-content-right .panel:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.user-css .article-content-right .panel::before {
+  content: url(attr);
+  position: absolute;
+  top: -09px;
+  left: 0;
+  right: 0;
+  height: 9px; /* Adjust the height as needed */
+  background: url(https://www.worldanvil.com/uploads/images/04ac6555596948120b4676e526e76822.png) top/cover no-repeat;
+}
+
+/* ////////// OTHER ELEMENTS ////////// */
+
+/* /// Back to the world button /// */
+.user-css div .backtoworld a {
+  padding-left: 5%;
+  background-color: var(--colorDarkRed);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--colorCreamFull);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+/* /// TOC article /// */
+.user-css div.articletoc {
+border: none;
+background: var(--colorDarkRed);
+}
+ 
+.user-css div.articletoc .article-toc-link {
+  transition: 0s;
+  border-bottom: none;
+}
+ 
+.user-css .articletoc {
+  background: #14161b;
+  color: #fff;
+  width: 242px;
+  max-height: 42px;
+  position: fixed;
+  top: 250px;
+  left: -200px;
+  z-index: 4;
+  overflow: hidden;
+  transition: 1s ease;
+}
+ 
+.user-css .articletoc::before {
+  content: url(https://www.worldanvil.com/uploads/images/ee67b50f0368ec35b5a624164cccb8c4.png) ;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+ 
+.user-css .articletoc:hover {
+ max-height: 100%;
+ left: 0px;
+}
+
+/* /// Image /// */
+.user-css .user-css-image-thumbnail img.nsfw {
+  filter: blur(10px);
+  transition: filter 0.5s;
+}
+
+.user-css .user-css-image-thumbnail img.nsfw:hover {
+  filter: blur(0px);
+  transition: filter 0.5s;
+}
+
+/* /// Image Credits /// */
+.user-css .artist-credits {
+  font-size: 8px;
+  font-style: italic;
+  text-align: center;
+  padding:2px;
+  transition: all 0.3s;
+}
+
+.user-css .artist-credits:hover {
+font-size: 14px;
+transition: all 0.3s;
+}
+
+/* ///Search Bar/// */
+.user-css .search-form {   /*where the search bar sits*/
+  position: absolute;
+   margin: 0px;
+   margin-left: 0px;
+   margin-top: 0px;
+   left: auto;
+}
+
+.user-css .typeahead-input{   /*what is typed in the search bar*/
+  background: var(--colorDarkRed);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.user-css .typeahead-input:focus{   /*gives the search bar a shadow when typing inside it (focus)*/
+  outline: unset;
+  background: var(--colorDarkRed);
+}
+
+.user-css .typeahead-input::placeholder{   /*the "search" inside the search bar when empty*/
+  color: var(--colorCreamFull);
+}
+
+.user-css #search-button.btn.btn-link {   /*the magnifying glass*/
+   color: var(--colorCreamFull);
+   font-family: Iceland, cursive;
+   opacity: 60%;
+}
+
+.user-css .typeahead.dropdown-menu {   /*the dropdown menu (and some associated text, I think?)*/
+  color: var(--colorCreamFull);
+  background: var(--colorDarkRed);
+  box-shadow: 0px 3px 3px rgba(0, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.user-css .typeahead .dropdown-item {   /*individual dropdown items*/
+  color: var(--colorCreamFull);
+}
+
+.user-css .typeahead a.dropdown-item{   /*removes the white background from hovered selections, can also be used to add effects*/
+  background: unset;
+}
+
+.user-css .typeahead .text-muted {   /*the font color in the dropdown menu when not hovered*/
+  color: var(--colorCreamFull);
+}
+
+.user-css .typeahead .active .text-muted {   /*the font color in the dropdown menu when hovered*/
+  color: var(--colorCreamFull);
+  text-decoration: underline;
+}
+
+/* ////////////////////////////////////////////////// /
+/////     Timelines, Historical Events & Maps     /////
+/ ////////////////////////////////////////////////// */
+
+/* ////////// TIMELINES ////////// */
+
+/* /// Timeline Events Panel /// */
+.user-css .timeline li .timeline-panel {
+  position: relative;
+  background: var(--colorCreamBox);
+  border-style: none;
+  box-shadow: 4px 4px 4px #333333;
+  border-radius: 0px;
+  padding: 10px;
+   margin-top: 60px;
+  transition: all 0.3s;
+}
+
+.timeline li .timeline-panel p {
+   padding-top: 3px;
+  background: var(--colorCreamBox);
+  color: #333333;
+}
+
+.timeline li .timeline-panel:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+/* /// Timeline Milestone /// */
+.user-css .timeline .milestone {
+  position: relative;
+  background: var(--colorCreamBox);
+  border-style: none;
+  box-shadow: 4px 4px 4px #333333;
+  border-radius: 0px;
+  padding: 10px;
+   margin-top: 60px;
+  transition: all 0.3s;
+}
+
+.timeline .milestone p {
+   padding-top: 3px;
+  background: var(--colorCreamBox);
+  color: #333333;
+}
+
+.timeline .milestone:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+/* /// Timeline Center Line /// */
+.user-css .timeline:before {
+    background-color: var(--colorDarkRed);
+}
+
+/* /// Timeline Center Line Markers /// */
+.user-css .timeline li .tl-circ {
+    background: var(--colorCreamBox);
+    color: #fff;
+    border: 2px solid var(--colorDarkRed);
+}
+
+/* /// Fixing Event Icons /// */
+.user-css .timeline .header-icon {
+    padding: 9px;
+    font-size: 16px;
+}
+
+/* ////////// MAPS ////////// */
+
+/* /// Map Preview Block /// */
+.user-css .map-box {
+  padding: 0;
+  background-color: var(--colorCreamBox);
+  border: none;
+  box-shadow: 4px 4px 4px #333333;
+  transition: all 0.3s;
+}
+
+.user-css .map-box::before {
+  content: url(attr);
+  position: absolute;
+  top: -9px;
+  left: 0;
+  right: 0;
+  height: 9px;
+  background: url(https://www.worldanvil.com/uploads/images/04ac6555596948120b4676e526e76822.png) top/cover no-repeat;
+}
+
+.user-css .map-box:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+/* ////////////////////////////////////////////////// /
+/////                  Component                  /////
+/ ////////////////////////////////////////////////// */
+
+/* ////////// ARTICLEBLOCKS ////////// */
+
+.user-css div.article-panel,
+.user-css-extended div.article-panel {
+  position: relative;
+  background: var(--colorCreamBox);
+  border-style: none;
+  box-shadow: 4px 4px 4px #333333;
+  border-radius: 0px;
+  padding: 10px;
+  margin-top: 30px;
+  transition: all 0.3s;
+}
+
+.user-css .article-panel::before,
+.user-css-extended .article-panel::before{
+  content: url(attr);
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background: url(https://www.worldanvil.com/uploads/images/04ac6555596948120b4676e526e76822.png) top/cover no-repeat;
+}
+
+/* /// Article Block Hover effects /// */
+.user-css .article-panel:hover,
+.user-css-extended .article-panel:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+/* /// Center Excerpt /// */
+.user-css .article-panel .excerpt,
+.user-css-extended .article-panel .excerpt {
+  text-align: center;
+  background: var(--colorCreamBox);
+  color: #333333;
+}
+
+/* /// Article Block Title /// */
+.user-css .article-panel .details h5 {
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.user-css .article-panel:hover .details h5 {
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+/* /// Article Block Subheading /// */
+.user-css .article-panel .details .subheading {   /*type of article*/
+   text-align: center;
+  transition: all 0.3s;
+}
+
+.user-css .article-panel:hover .details .subheading {
+  font-size: 10px;
+  transition: all 0.3s;
+}
+
+* ////////// SECRETS ////////// */
+
+/* /// Seamless Secrets /// */
+.user-css-secret {
+    padding: 0;
+    background-color: transparent;
+}
+
+/* ////////// GLOBAL COMPONENTS ////////// */
+
+/* /// World Background /// */
+.user-css-presentation {
+    background: url(https://i.imgur.com/QfQRnHs.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*this locks the image on the screen; it wont scroll*/
+}
+
+/* ////////////////////////////////////////////////// /
+/////               Master Component              /////
+/ ////////////////////////////////////////////////// */
+
+/* ////////// FAMILY TREES & BLOODLINES ////////// */
+
+.user-css .rhea-family-tree {
+  --lineColor: var(--colorDarkRed);
+  --characterNameBorder: 1px solid var(--colorDarkRed);
+}
+
+/* ////////// INTERACTIVE TABLES ////////// */
+
+/* /// Interactive Tables Variables /// */
+.user-css .thales-render {
+  --TableBorder: none;
+  --TableHeaderBackground: var(--colorPaleBlue);
+  --TableHeaderBorder: none;
+  --TableHeaderFontColor: #333333;
+  --TableHeaderButtonIconColor: #333333;
+  --TableCellFontColor: #333333;
+  --TableCellBorder: none;
+  --TableBackground: inherit;
+}
+
+.user-css .thales-render tr:nth-child(2n) {
+  background: var(--colorPaleBlue) !important;
+}
+
+/* ////////// ORGANIZATION TREE ////////// */
+
+/* /// Organization tree variable /// */
+.user-css .orgtree a {
+   position: relative;
+  background: var(--colorCreamBox);
+  border-style: none;	
+  box-shadow: 4px 4px 4px #333333;
+  border-radius: 0px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.user-css .orgtree a::before {
+  content: url(attr);
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: url(https://www.worldanvil.com/uploads/images/04ac6555596948120b4676e526e76822.png) top/cover no-repeat;
+}
+
+.user-css .orgtree li a:hover,
+.user-css-extended .orgtree li a:hover {
+  text-decoration: underline;
+  color: var(--colorDarkRed);
+  background: var(--colorCreamBox);
+  border: none;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.user-css .orgtree li a:hover+ul li a,
+.user-css-extended .orgtree li a:hover+ul li a {
+  text-decoration: none;
+  color: var(--colorDarkRed);
+  background: var(--colorCreamBox);
+  border: none;
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+/* ////////////////////////////////////////////////// /
+/////             GrandMaster Container           /////
+/ ////////////////////////////////////////////////// */
+
+
+
+
+/* ////////////////////////////////////////////////// /
+/////                   Mobile                  /////
+/ ////////////////////////////////////////////////// */
+
+.user-css .tooltipster {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media only screen and (max-width: 800px) {
+ .mention-buttons, .CodeMirror-buttonsPanel, .sceditor-toolbar {
+  }
+}
