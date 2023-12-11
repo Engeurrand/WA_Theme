@@ -124,6 +124,14 @@
   display: none;
 }
 
+/* /// World Table of Contents /// */
+
+.user-css div.followers-counter div.panel {  
+   background: none;
+   border: none;
+   box-shadow: none;
+}
+
 /* ////////////////////////////////////////////////// /
 /////               Article & BBCode              /////
 / ////////////////////////////////////////////////// */
@@ -499,6 +507,31 @@ transition: all 0.3s;
 .user-css-extended .nav-tabs li.nav-item a.nav-link {
   background-color: var(--colorDarkRed);
   color: var(--colorCreamFull);
+}
+
+/* /// Comments /// */
+.user-css-extended .form-control {   /*the comment form box*/
+  box-shadow: 4px 4px 4px #333333;255, .2);
+   border-radius: 0px;
+}
+
+.user-css-extended .comment-box {   /*the actual comments left by people*/
+  background: var(--colorCreamBox);
+  box-shadow: 4px 4px 4px #333333;
+  font-size: 12px;
+}
+
+.user-css-extended .comment-box p {   /*the actual comments left by people*/
+  background: var(--colorCreamBox);
+  font-size: 18px;
+}
+
+.user-css-extended .btn-primary {   /*the "leave comment" button when not hovered over*/
+  background-color: var(--colorDarkRed);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--colorCreamFull)!important;
+  padding: 15px 25px;
+  border-radius: 10px;
 }
 
 /* ////////////////////////////////////////////////// /
